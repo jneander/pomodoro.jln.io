@@ -1,13 +1,56 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff4e3" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#96311f" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link href="./src/style.css" rel="stylesheet" />
+
+  <!-- Primary Meta Tags -->
+  <title>Pomodoro Timer</title>
+
+  <link rel="canonical" href="https://pomodoro.jln.io/" />
+
+  <meta name="title" content="Pomodoro Timer">
+  <meta name="description" content="Complete your tasks, 25 minutes at a time!">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pomodoro.jln.io/">
+  <meta property="og:title" content="Pomodoro Timer">
+  <meta property="og:description" content="Complete your tasks, 25 minutes at a time!">
+  <meta property="og:image" content="https://pomodoro.jln.io/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://pomodoro.jln.io/">
+  <meta property="twitter:title" content="Pomodoro Timer">
+  <meta property="twitter:description" content="Complete your tasks, 25 minutes at a time!">
+  <meta property="twitter:image" content="https://pomodoro.jln.io/og-image.png">
+</head>
+
+<body data-step="session">
+  <main>
+    <p class="time">25:00</p>
+
+    <div class="actions">
+      <button class="icon" data-action="reset" type="button">Reset</button>
+      <button class="icon" data-action="start-pause" type="button">Start</button>
+      <button class="icon" data-action="next" type="button">Next</button>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
